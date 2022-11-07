@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="circles-css" id="circle1"></div>
+    <div class="circles-css" id="circle2"></div>
+    <div class="circles-css" id="circle3"></div>
+
+    <div class="principal-container">
+        <div class="polygon">
+            <div class="previous">
+                <i class="fas fa-long-arrow-left"></i>
+                <span> Previous Step</span>
+            </div>
+
+
+
+        </div>
+        <div class="credit-card">
+            <img src="img/chip.png" alt="chip" class="chip">
+            <img src="" alt="" class="company">
+            <div class="number">.... .... .... ....</div>
+            <div class="exp-date">
+                <span id="month">00</span>
+                /
+                <span id="year">00</span>
+            </div>
+        </div>
+
+        <div class="container-payment-details">
+            <h2>Your Payment Details</h2>
+            <div class="container-form">
+                <span class="input-description">CARDHOLDER NAME</span>
+                <input type="text">
+                <span class="input-description">CARD NUMER</span>
+                <input id="input-card-number" type="text" onblur="numTarjet()" maxlength="16">
+
+                <div class="especials-inputs">
+                    <div class="div-exp-date">
+                        <span id="exp-date-title" class="input-description">EXPIRATION DATE</span>
+                        <input id="exp-date-input" type="month" onblur="expirationCard()" name="" id="">
+                    </div>
+
+                    <div class="div-cvv">
+                        <span id="cvv-title" class="input-description">CVV</span>
+                        <input id="cvv-input" type="text" name="" id="" maxlength="3">
+                    </div>
+                </div>
+
+                <div class="helper">
+                    <i class="far fa-check-circle check"></i>
+                    <span class="remember-me">Save my details for future payments</span>
+                </div>
+
+
+            </div>
+            <button>Pay Now</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
